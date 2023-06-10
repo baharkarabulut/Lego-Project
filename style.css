@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --bg-color: #fff;
+    --main-color: #e55472;
+    --text-color: #010101;
+    --2nd-color: #434343;
+    --other-color: #666666;
+    --big-font: 5rem;
+    --h2-font: 2.3rem;
+    --p-font: 1.3rem;
+  }
+  
+  body {
+    color: var(--text-color);
+    background: var(--bg-color);
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: #faffbf;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    transition: all .50s ease;
+  }
+  
+  .logo {
+    width: 150px; /* İstenilen genişliği ayarlayın */
+    height: auto;
+    margin: 0 auto; /* Logo'yu yatayda ortalamak için */
+    display: block; /* İçeriğin blok olarak görüntülenmesini sağlar */
+  }
+  
+  .logo img {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .h-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .h-icons i {
+    font-size: 25px;
+    color: var(--text-color);
+    margin-left: 5px;
+    margin-right: 20px;
+    transition: all .50s ease;
+  }
+  
+  .h-icons i:hover {
+    transform: translate(-4px);
+    color: var(--main-color);
+  }
+  
+  .menu-icon {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  cursor: pointer;
+}
+
+.menu-label {
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-icon i {
+  font-size: 25px;
+}
+
+.menu-dropdown {
+    position: fixed;
+    top: 90px;
+    left: 10px;
+    width: 250px;
+    height: 80vh;
+    background-color: #faffbf;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 999;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.menu-dropdown.show {
+    display: block;
+}
+
+.menu-content {
+    padding: 20px; 
+}
+
+.menu-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-content li {
+    margin-bottom: 5px;
+    color: #000;
+}
+.menu-content li i {
+    color: black;
+  }
+
+  .menu-content li a {
+    color: black;
+  }
+
+/* Main */
+.slideshow-container {
+    position: relative;
+    width: 70%;
+    height: 300px;
+    margin: 100px auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: calc(50% - 100px); /* Resmin yarı yüksekliği kadar yukarıya konumlandırmak için */
+    font-size: 15px;
+    color: #010101;
+    background-color: #faffbf;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+  }
+  
+  .prev {
+    left: 15%; /* Sol okun yatay konumunu ayarlayın */
+    transform: translate(-50%, -50%);
+  }
+  
+  .next {
+    right: 15%; /* Sağ okun yatay konumunu ayarlayın */
+    transform: translate(50%, -50%);
+  }
+
+  /* Card */
+  .selections {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .selections h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Kartlar arasındaki boşluğu burada ayarlayabilirsiniz */
+  }
+  
+  .card {
+    width: 250px; 
+    height: 44vh; 
+    margin: 0 10px;
+    padding: 20px; /* Kart içeriğine iç boşluk eklemek için değeri ayarlayın */
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+
+  /* Lego Avatar */
+
+
+  footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px; /* Diğer içeriklerden 50 piksel mesafe bırakır */
+  }
+

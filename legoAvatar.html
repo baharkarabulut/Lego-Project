@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<style>
+     .selections h2 {
+    color: var(--bg-color);
+  }
+  </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="menu-icon" id="menu-toggle">
+            <i class="bx bx-menu-alt-left"></i>
+            <span class="menu-label">Temalar</span>
+        </div>
+        
+
+        <a href="#" class="logo">
+            <img src="blocks.png">
+        </a>
+
+        <div class="h-icons">
+            <a href="#"><i class="bx bx-shopping-bag"></i></a>
+            <a href="#"><i class="bx bx-heart"></i></a>
+        </div>
+    </header>
+    
+    <div class="menu-dropdown" id="menu-dropdown">
+        <div class="menu-content">
+            <ul>
+                <li><a href="legoAvatar.html"><i class="fas fa-chevron-right"></i> Lego Avatar</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Minecraft</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Speed Champions</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Harry Potter</a></li>
+                <li><a href="legoStarWars.html"><i class="fas fa-chevron-right"></i> Star Wars</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Disney</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Super Mario</a></li>
+                <li><a href="legoCity.html"><i class="fas fa-chevron-right"></i> City</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Juniors (4+)</a></li>
+                <li><a href="legoFriends.html"><i class="fas fa-chevron-right"></i> Friends</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Creator 3-in-1</a></li>
+            </ul>
+            <button class="btn btn-anasayfa" onclick="window.location.href='index.html'">Anasayfa</button>
+        </div>
+    </div>
+
+    <!-- Lego Avatar Ürünleri -->
+    <div class="selections">
+            <h2>Lego Avatar</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="avatar/avatar1.jpg" alt="Lego Avatar 1">
+          <button class="btn" onclick="addToCart(1)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+          <img src="avatar/avatar2.jpg" alt="Lego Avatar 2">
+          <button class="btn" onclick="addToCart(2)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+          <img src="avatar/avatar3.jpg" alt="Lego Avatar 3">
+          <button class="btn" onclick="addToCart(3)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="avatar/avatar4.jpg" alt="Lego Avatar 4">
+            <button class="btn" onclick="addToCart(4)">Sepete Ekle</button>
+          </div>
+      </div>
+    </div>
+    <div class="selections">
+        <div class="card-container">
+            <div class="card">
+              <img src="avatar/avatar5.jpg" alt="Lego Avatar 5">
+              <button class="btn" onclick="addToCart(5)">Sepete Ekle</button>
+            </div>
+            <div class="card">
+              <img src="avatar/avatar6.jpg" alt="Lego Avatar 6">
+              <button class="btn" onclick="addToCart(6)">Sepete Ekle</button>
+            </div>
+            <div class="card">
+              <img src="avatar/avatar7.jpg" alt="Lego Avatar 7">
+              <button class="btn" onclick="addToCart(7)">Sepete Ekle</button>
+            </div>
+        </div>
+    </div>
+  
+    <script>
+      function addToCart(productId) {
+        console.log("Ürün ID'si: " + productId);
+        // Sepete eklemek için gerekli işlemleri burada gerçekleştir
+      }
+    </script>
+
+<footer>
+
+</footer>
+
+    <!-- Script Link -->
+    <script src="script.js"></script>
+</body>
+</html>
